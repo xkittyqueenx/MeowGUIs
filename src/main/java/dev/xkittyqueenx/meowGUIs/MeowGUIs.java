@@ -4,10 +4,22 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class MeowGUIs extends JavaPlugin {
 
+    private static JavaPlugin plugin;
+
+    private static GUIManager guiManager;
+
+    public static JavaPlugin getPlugin() {
+        return plugin;
+    }
+
+    public static GUIManager getGuiManager() {
+        return guiManager;
+    }
+
     @Override
     public void onEnable() {
-        // Plugin startup logic
-
+        plugin = this;
+        guiManager = new GUIManager();
     }
 
     @Override
