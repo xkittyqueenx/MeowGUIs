@@ -1,0 +1,4 @@
+name: MeowGUIs
+version: '0.0.1-SNAPSHOT'
+main: dev.xkittyqueenx.meowGUIs.MeowGUIs
+api-version: '1.21'
